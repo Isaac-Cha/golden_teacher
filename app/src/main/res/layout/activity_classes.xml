@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:PullToRefresh="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/linearSerialTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_classes"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90px"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvCreate"
+            android:layout_width="164px"
+            android:layout_height="49px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/shape_et_transparent_bg"
+            android:gravity="center"
+            android:text="创建班级"
+            android:textColor="@color/white" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lvClasses"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/linearSerialTitle"
+        android:background="#f4f4f4"
+        android:cacheColorHint="@color/transparent"
+        android:divider="#f4f4f4"
+        android:dividerHeight="15dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@color/transparent"
+        android:smoothScrollbar="true"
+        PullToRefresh:ptrAnimationStyle="rotate"
+        PullToRefresh:ptrDrawable="@drawable/slide_in_from_top_frame"
+        PullToRefresh:ptrMode="both"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/linearUser"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="20px"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_person" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearNodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_nodata" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无数据哦"
+                android:textColor="@color/deep_gray" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

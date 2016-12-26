@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.yl.teacher.widget.CustomTitleBar
+        android:id="@+id/widget_custom_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/navi_user"></com.yl.teacher.widget.CustomTitleBar>
+
+    <ScrollView
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/linearMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25px"
+                    android:src="@drawable/icon_xing" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:text="标    题："
+                    android:textColor="@color/deep_gray"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:hint="请输入投票标题名"
+                    android:paddingBottom="5dip"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dip"
+                    android:singleLine="true"
+                    android:textColor="@color/deep_gray"
+                    android:textSize="16sp"></EditText>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:src="@color/line" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/linearStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25px"
+                    android:src="@drawable/icon_xing" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:text="开始时间："
+                    android:textColor="@color/deep_gray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvStart"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="请输入投票开始时间"
+                    android:singleLine="true"
+                    android:textColor="@color/deep_gray"
+                    android:textSize="16sp"></TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/pay_arrow" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:src="@color/line" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/linearEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25px"
+                    android:src="@drawable/icon_xing" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:text="结束时间："
+                    android:textColor="@color/deep_gray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvEnd"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="请输入投票结束时间"
+                    android:singleLine="true"
+                    android:textColor="@color/deep_gray"
+                    android:textSize="16sp"></TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/pay_arrow" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:src="@color/line" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/linear_votingtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25px"
+                    android:src="@drawable/icon_xing" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:text="投票类型："
+                    android:textColor="@color/deep_gray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_votingtype"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="请输入投票类型"
+                    android:singleLine="true"
+                    android:textColor="@color/deep_gray"
+                    android:textSize="16sp"></TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/pay_arrow" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:src="@color/line" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/linear_anonymous"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25px"
+                    android:src="@drawable/icon_xing" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:text="公开结果："
+                    android:textColor="@color/deep_gray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_anonymous"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="是否公开投票结果"
+                    android:singleLine="true"
+                    android:textColor="@color/deep_gray"
+                    android:textSize="16sp"></TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/pay_arrow" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:src="@color/line" />
+
+            <com.yl.teacher.widget.NoScrollListView
+                android:id="@+id/lvAddVote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/transparent"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="@color/transparent"
+                android:minHeight="200px"
+                android:smoothScrollbar="true" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/tvAdd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/navi_user"
+        android:gravity="center"
+        android:text="添加投票选项"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

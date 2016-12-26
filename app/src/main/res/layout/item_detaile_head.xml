@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/linearEdit"
+            android:layout_width="match_parent"
+            android:layout_height="373px"
+            android:background="@drawable/bg_classes"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvGrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50px"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="32px"
+                android:layout_height="32px"
+                android:layout_marginBottom="50px"
+                android:layout_marginLeft="10px"
+                android:src="@drawable/img_detaile_write" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#24c68a"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/linearParent"
+                android:layout_width="0dp"
+                android:layout_height="88px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="26px"
+                    android:layout_height="24px"
+                    android:src="@drawable/img_detaile_pr" />
+
+                <TextView
+                    android:id="@+id/tvParent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:gravity="center"
+                    android:text="家长:20"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:text=">"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="10px"
+                android:src="@color/white" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="68px"
+                android:layout_weight="1">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/linearPermit"
+                    android:layout_width="match_parent"
+                    android:layout_height="68px"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="26px"
+                        android:layout_height="26px"
+                        android:src="@drawable/img_detaile_sh" />
+
+                    <TextView
+                        android:id="@+id/tvPermit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5px"
+                        android:text="待审批:20"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5px"
+                        android:text=">"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_dot"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10px"
+                    android:layout_marginTop="10px"
+                    android:src="@drawable/img_my_red"
+                    android:visibility="gone" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="10px"
+                android:src="@color/white" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/linearInvite"
+                android:layout_width="0dp"
+                android:layout_height="68px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="26px"
+                    android:layout_height="24px"
+                    android:src="@drawable/img_detaile_yq" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:text="邀请家长"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:text=">"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoFrameLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

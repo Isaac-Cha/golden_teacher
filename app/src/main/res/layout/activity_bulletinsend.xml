@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.yl.teacher.widget.CustomTitleBar
+        android:id="@+id/widget_custom_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/navi_user"></com.yl.teacher.widget.CustomTitleBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rg_sendbulletin_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/linear_friend_bg"
+                android:descendantFocusability="afterDescendants"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <RadioButton
+                    android:id="@+id/rb_sendbulletin_notice"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_friend_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/send_notic"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_sendbulletin_action"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/send_action"
+                    android:textColor="@color/bulletin_txt"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+            <!--<FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />-->
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:background="@drawable/et_comment_bg"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="30px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20px">
+
+                    <ImageView
+                        android:id="@+id/iv_title_xing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_xing" />
+
+                    <TextView
+                        android:id="@+id/tv_sendbulletin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:text="@string/sendbulletin_title"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_sendbulletin_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:textColor="@color/deep_gray"
+                        android:layout_toRightOf="@+id/tv_class"
+                        android:background="@null"
+                        android:hint="@string/sendbulletin_title_action_hint"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/border_gray"></View>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_statrtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="30px"
+                    android:paddingLeft="20px">
+
+                    <ImageView
+                        android:id="@+id/iv_starttime_xing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_xing"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tv_starttime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:layout_toRightOf="@+id/iv_starttime_xing"
+                        android:text="@string/sendbulletin_start_time"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/et_sendbulletin_starttime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@+id/tv_starttime"
+                        android:background="@null"
+                        android:editable="false"
+                        android:hint="@string/sendbulletin_start_time_hint"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="60px"
+                        android:src="@drawable/arrow_grey" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/border_gray"></View>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_endtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="30px"
+                    android:paddingLeft="20px">
+
+                    <ImageView
+                        android:id="@+id/iv_endtime_xing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_xing"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tv_endtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:layout_toRightOf="@+id/iv_endtime_xing"
+                        android:text="@string/sendbulletin_end_time"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/et_sendbulletin_endtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@+id/tv_endtime"
+                        android:background="@null"
+                        android:editable="false"
+                        android:hint="@string/sendbulletin_end_time_hint"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="60px"
+                        android:src="@drawable/arrow_grey" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/border_gray"></View>
+
+                <!--<com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40px"
+                    android:layout_marginTop="40px"
+                    android:paddingLeft="40px">
+
+                    <ImageView
+                        android:id="@+id/iv_range_xing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_xing"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tv_range"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:layout_toRightOf="@+id/iv_range_xing"
+                        android:text="@string/sendbulletin_range"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@+id/tv_range"
+                        android:background="@null"
+                        android:hint="@string/sendbulletin_range_hint"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="60px"
+                        android:src="@drawable/arrow_grey" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/border_gray"></View>-->
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_peoplenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20px">
+
+                        <ImageView
+                            android:id="@+id/iv_peoplenumber_xing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/icon_xing"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/tv_peoplenumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:layout_toRightOf="@+id/iv_peoplenumber_xing"
+                            android:text="@string/sendbulletin_people_number"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/et_sendbulletin_peoplenumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:textColor="@color/deep_gray"
+                            android:layout_toRightOf="@+id/tv_peoplenumber"
+                            android:background="@null"
+                            android:hint="@string/sendbulletin_people_number_hint"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textSize="16sp" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/ll"
+                        android:layout_marginTop="30px"
+                        android:background="@color/border_gray"></View>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <!--<com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:layout_marginTop="30px"
+                android:paddingLeft="20px">
+
+                <ImageView
+                    android:id="@+id/iv_publisher_xing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_xing"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_publisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:layout_toRightOf="@+id/iv_publisher_xing"
+                    android:text="@string/publisher"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_sendbulletin_publisher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_publisher"
+                    android:background="@null"
+                    android:hint="@string/publisher_hint"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/border_gray"></View>-->
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:background="@drawable/et_comment_bg">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/arl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="30px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20px">
+
+                    <ImageView
+                        android:id="@+id/iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:src="@drawable/icon_xing" />
+
+                    <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:layout_toRightOf="@id/iv"
+                        android:text="@string/content"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_sendbulletin_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:textColor="@color/deep_gray"
+                        android:layout_marginRight="20px"
+                        android:layout_toRightOf="@id/tv"
+                        android:background="@null"
+                        android:hint="@string/sendbulletin_action_content_hint"
+                        android:textSize="16sp" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:layout_below="@id/arl"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginLeft="200px">
+
+                    <ImageView
+                        android:id="@+id/iv_sendbulletin_image"
+                        android:layout_width="180px"
+                        android:layout_height="180px"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/btn_add"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/iv_sendbulletin_remove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/circle_remove"
+                        android:visibility="gone" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </ScrollView>
+
+</com.zhy.autolayout.AutoLinearLayout>

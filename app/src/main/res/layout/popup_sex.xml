@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/tv_male"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:gravity="center"
+            android:text="男"
+            android:textColor="#666666"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#c9c9c9" />
+
+        <TextView
+            android:id="@+id/tv_female"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:gravity="center"
+            android:text="女"
+            android:textColor="#666666"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#c9c9c9" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30px"
+            android:background="@color/bg_gray" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#c9c9c9" />
+
+        <TextView
+            android:id="@+id/tvCancelSex"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/user_coupon_red"
+            android:textSize="18sp" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

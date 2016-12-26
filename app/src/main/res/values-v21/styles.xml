@@ -1,0 +1,34 @@
+<resources>>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="FullBleedTheme" parent="android:Theme.Holo.Light.NoActionBar.TranslucentDecor">
+        <!-- API 19 theme customizations can go here. -->
+
+    </style>
+
+    <style name="FullScreen" parent="Theme.AppCompat.NoActionBar">
+        <!-- #region /设置全屏属性-->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <!--#endregion -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- item name="android:windowBackground"         设置背景透明度及其颜色值 -->
+    <!-- item name="android:windowIsTranslucent"      设置当前Activity是否透明-->
+    <!-- item name="android:windowAnimationStyle"     设置当前Activity进出方式-->
+    <!-- item name="android:windowContentTransitions" 设置当前Activity是否支持转场动画-->
+    <style name="FullScreenBlack" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+</resources>

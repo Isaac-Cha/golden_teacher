@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:clickable="false" >
+
+    <RelativeLayout
+        android:id="@+id/widget_custom_titlebar_left_item"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true" android:clickable="true">
+		<TextView android:clickable="false"
+                android:id="@+id/widget_custom_titlebar_left_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+	<ImageButton android:clickable="false"
+                android:id="@+id/widget_custom_titlebar_left_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+               	android:layout_marginLeft="30dp"
+               	android:background="@color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/back"
+                android:visibility="gone" />
+            <ImageButton android:clickable="false"
+                android:id="@+id/widget_custom_titlebar_left_button_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+               	android:layout_marginLeft="50dp"
+               	android:background="@color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/back"
+                android:visibility="gone" />
+     
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/widget_custom_titlebar_right_item"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" android:clickable="true">
+			<TextView android:clickable="false"
+                android:id="@+id/widget_custom_titlebar_right_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+			<LinearLayout android:id="@+id/linear_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:orientation="horizontal" android:paddingLeft="25dip" android:paddingRight="5dip">
+			    <ImageButton android:clickable="false"
+                android:id="@+id/widget_custom_titlebar_right_button_two"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:background="@color/transparent"
+                
+                android:scaleType="centerInside"
+                android:src="@drawable/back"
+                android:visibility="gone" />
+			    <ImageButton android:clickable="false"
+                android:id="@+id/widget_custom_titlebar_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/back"
+                android:visibility="gone" />
+        
+			    
+			    
+			    
+			</LinearLayout>
+			
+			
+            
+
+       
+    </RelativeLayout>
+
+<LinearLayout android:gravity="center" android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:orientation="horizontal">
+
+    <ImageButton android:clickable="false"
+        android:id="@+id/widget_custom_titlebar_centre_leftimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/back"
+
+android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView android:clickable="false"
+        android:id="@+id/widget_custom_titlebar_center_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/white"
+        android:textSize="20sp" >
+    </TextView>
+
+
+    </LinearLayout>
+
+	
+</RelativeLayout>

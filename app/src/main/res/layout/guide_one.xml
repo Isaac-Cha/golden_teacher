@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="500px"
+            android:layout_height="600px"
+            android:src="@drawable/guide_one_stu" />
+
+        <ImageView
+            android:layout_width="280px"
+            android:layout_height="100px"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/guide_one_stu_text" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_gohome"
+        android:layout_width="150px"
+        android:layout_height="40px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="100px"
+        android:src="@drawable/img_guide_pass" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

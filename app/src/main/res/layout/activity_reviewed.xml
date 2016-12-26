@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_renote"
+    android:layout_height="match_parent">
+
+    <com.yl.teacher.widget.CustomTitleBar
+        android:id="@+id/widget_custom_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/navi_user"></com.yl.teacher.widget.CustomTitleBar>
+
+    <ScrollView
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        >
+
+        <LinearLayout
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.yl.teacher.widget.NoScrollListView
+                android:id="@+id/lvReply"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent"
+                android:cacheColorHint="@color/transparent"
+                android:dividerHeight="0dp"
+                android:divider="@color/transparent"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="@color/transparent"
+                android:smoothScrollbar="true"></com.yl.teacher.widget.NoScrollListView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

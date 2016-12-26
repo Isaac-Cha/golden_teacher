@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical" android:background="@color/linear_bg">
+    <com.yl.teacher.widget.CustomTitleBar
+        android:id="@+id/widget_custom_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/navi_user"></com.yl.teacher.widget.CustomTitleBar>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relaSchool"
+            android:layout_height="80px">
+
+            <TextView
+                android:layout_marginLeft="30px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="学校"
+                android:textSize="15sp"
+                android:textColor="@color/deep_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+
+                android:layout_marginRight="30px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pay_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginRight="70px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/tvSchool"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:singleLine="true"
+                android:textColor="@color/deep_gray"
+                android:textSize="15sp"></TextView>
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px">
+
+            <TextView
+                android:layout_marginLeft="30px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="姓名"
+                android:textSize="15sp"
+                android:textColor="@color/deep_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+
+                android:layout_marginRight="30px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pay_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_marginRight="40px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/etName"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:background="@null"
+                android:hint="请填写全名"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dip"
+                android:singleLine="true"
+                android:textColor="@color/deep_gray"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp"></EditText>
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/relaSex"
+            android:layout_width="match_parent"
+            android:layout_height="80px">
+
+            <TextView
+                android:layout_marginLeft="30px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="性别"
+                android:textSize="15sp"
+                android:textColor="@color/deep_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+
+                android:layout_marginRight="30px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pay_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginRight="70px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/tvSex"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:gravity="center"
+                android:textColor="@color/deep_gray"
+                android:singleLine="true"
+                android:text="男"
+                android:textSize="15sp"></TextView>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

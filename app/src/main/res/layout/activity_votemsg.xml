@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.yl.teacher.widget.CustomTitleBar
+        android:id="@+id/widget_custom_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/navi_user"></com.yl.teacher.widget.CustomTitleBar>
+
+    <EditText
+        android:id="@+id/etComment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/et_comment_bg"
+        android:gravity="top"
+        android:hint="请输入活动内容"
+        android:inputType="textMultiLine"
+        android:maxLength="200"
+        android:padding="10dp"
+        android:paddingTop="5dip"
+        android:singleLine="true"
+        android:textColor="@color/deep_gray"
+        android:textCursorDrawable="@null"
+        android:textSize="18sp"></EditText>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10px">
+        <!--<com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imgVote"
+            android:layout_width="189px"
+            android:layout_height="188px"
+            fresco:placeholderImage="@drawable/btn_add"
+            fresco:failureImage="@drawable/btn_add"
+            />-->
+        <ImageView
+            android:id="@+id/imgVote"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_add" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/relaRemove"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|top"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imgRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/circle_remove" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

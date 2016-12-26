@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="navi_bar_bg">#4b4550</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="linear_bg">#f4f4f4</color>
+    <color name="register_txt">#606060</color>
+    <color name="register_ok">#6dd0a5</color>
+    <color name="line">#e2e1e1</color>
+    <color name="info_txt">#666666</color>
+    <color name="home_text">#666666</color>
+
+    <color name="navi_user">#21c185</color>
+
+
+    <color name="tint_blue">#28a9ea</color>
+    <color name="dark_blue">#212121</color>
+    <color name="tint_green">#7FFF00</color>
+    <color name="dark_purple">#8A2BE2</color>
+    <color name="user_coupon_red">#ff6253</color>
+
+    <color name="homework_green">#ECFDF7</color>
+
+    <color name="black">#000000</color>
+    <color name="light_gray">#99a4b7</color>
+    <color name="deep_gray">#394257</color>
+    <color name="border_gray">#d9dfe5</color>
+    <color name="bg_gray">#e1e1e1</color>
+    <color name="btn_gray">#d1d1d1</color>
+    <color name="glass_gall">#c2ebef</color>
+    <color name="light_blue">#87d0f2</color>
+    <color name="bulletin_txt">#989797</color>
+
+    <color name="float_transparent">#00000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="text_color">#575757</color>
+    <color name="material_blue_grey_80">#ff37474f</color>
+    <color name="material_blue_grey_90">#ff263238</color>
+    <color name="material_blue_grey_95">#ff21272b</color>
+    <color name="material_deep_teal_20">#ff80cbc4</color>
+    <color name="material_deep_teal_50">#ff009688</color>
+    <color name="note_no">#ff8175</color>
+    <color name="note_yes">#20c184</color>
+
+    <color name="color_vote_time_text_pink">#FD8989</color>
+    <color name="color_vote_time_text_gray">#AAAAAA</color>
+
+    <color name="color_class_name_orange">#F89D7B</color>
+    <color name="color_class_name_blue">#4CC1FB</color>
+    <color name="color_class_name_purple">#F990AC</color>
+
+    <color name="color_class_join_orange">#FCD5C8</color>
+    <color name="color_class_join_blue">#7BCEFC</color>
+    <color name="color_class_join_purple">#FBA3B9</color>
+
+</resources>

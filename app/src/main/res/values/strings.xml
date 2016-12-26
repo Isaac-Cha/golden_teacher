@@ -1,0 +1,90 @@
+<resources>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="app_name">校园管家</string>
+    <string name="txt_login_name">请输入手机号码</string>
+    <string name="txt_login_pwd">请输入密码</string>
+    <string name="txt_login">登录</string>
+    <string name="txt_login_service">联系客服</string>
+    <string name="txt_login_forget">忘记密码</string>
+    <string name="txt_login_phone">手机注册</string>
+    <string name="txt_full_school">请填写学校全称</string>
+
+    <string name="update_nosdcard_error">没有可用的sdcard空间，请检查您的手机设置。</string>
+    <string name="update_download_error">网络连接超时，请稍候再试。。。</string>
+    <string name="update_info_error">获取服务器更新信息失败</string>
+    <string name="version_start_download">正在下载更新！</string>
+    <string name="page_setting_version_update">发现新版本</string>
+    <string name="version_check_version_title">因本次更新做出重大更改 ，为了您更好的体验乐学淘请您更新至最新版本。</string>
+    <string name="version_begin_download">更新</string>
+    <string name="version_download_later">关闭</string>
+    <string name="version_title_random">检查到新版本v%s</string>
+    <string name="version_begin_random">立即升级</string>
+    <string name="version_download_random">忽略</string>
+    <string name="page_setting_check_version_no_update">当前已经是最新%s版本</string>
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="NoChoose">0/3</string>
+    <string name="ChooseOne">1/3</string>
+    <string name="ChooseTow">2/3</string>
+    <string name="ChooseThree">3/3</string>
+    <string name="exitHint">再按一次退出程序</string>
+    <string name="ChooseEnough">最多只可选择三个标签</string>
+    <string name="ChooseHint">请先在上一页选择标签</string>
+    <string name="action_settings">Settings</string>
+    <string name="basic_action_1">删除</string>
+    <string name="basic_action_2">Action_2</string>
+    <string name="basic_del">Delete</string>
+    <string name="str_orange">#fe7b27</string>
+    <string name="str_green">#3cac69</string>
+    <string name="str_red">#FF4444</string>
+    <string name="str_yellow">#FFBB33</string>
+    <string name="str_sky_blue">#33B5E5</string>
+
+    <string name="cancel">取消</string>
+    <string name="publish_empty_text">分享点什么吧……</string>
+    <string name="take_photo">拍照</string>
+    <string name="select_from_local">从相册中选取</string>
+
+    <!-- 作业页面 -->
+    <string name="class_name">一年一班作业</string>
+    <string name="consult_info">2人已阅</string>
+    <string name="homework">1.语文:把《沁园春》抄写10遍</string>
+    <string name="class_title">班　　级: </string>
+    <string name="class_title_hint">请输入班级</string>
+    <string name="home_date">作业日期:</string>
+    <string name="home_date_hint">请选择时间</string>
+    <string name="publisher">发 布 人 :</string>
+    <string name="publisher_hint">请输入您的名字</string>
+    <string name="content">内　　容:</string>
+    <string name="content_hint">请输入作业内容</string>
+
+    <!-- 公告页面 -->
+    <string name="send_notic">发通知</string>
+    <string name="send_action">发活动</string>
+    <string name="sendbulletin_title">标　　题:</string>
+    <string name="sendbulletin_title_notic_hint">请输入通知标题名</string>
+    <string name="sendbulletin_title_action_hint">请输入活动标题名</string>
+    <string name="sendbulletin_start_time">开始时间:</string>
+    <string name="sendbulletin_start_time_hint">请选择活动开始时间</string>
+    <string name="sendbulletin_end_time">结束时间:</string>
+    <string name="sendbulletin_end_time_hint">请选择活动结束时间</string>
+    <string name="sendbulletin_range">发送范围:</string>
+    <string name="sendbulletin_range_hint">请输入发送范围</string>
+    <string name="sendbulletin_content_hint">请输入通知内容</string>
+    <string name="sendbulletin_action_content_hint">请输入活动内容</string>
+    <string name="sendbulletin_people_number">参与人数:</string>
+    <string name="sendbulletin_people_number_hint">请输入参与人数</string>
+
+    <string name="net_error">网络异常，请稍候再试！</string>
+    <string name="no_more_data">没有更多数据了！</string>
+
+    <string name="show_image">show_image</string>
+
+</resources>

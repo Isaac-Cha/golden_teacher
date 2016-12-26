@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.yl.teacher.widget.CustomTitleBar
+        android:id="@+id/widget_custom_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/navi_user"></com.yl.teacher.widget.CustomTitleBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40px"
+        android:layout_marginTop="50px"
+        android:paddingLeft="40px">
+
+        <ImageView
+            android:id="@+id/iv_class_xing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_xing" />
+
+        <TextView
+            android:id="@+id/tv_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/iv_class_xing"
+            android:text="@string/class_title"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_classname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/tv_class"
+            android:background="@null"
+            android:editable="false"
+            android:hint="@string/class_title_hint"
+            android:singleLine="true" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/border_gray"></View>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_homework_date"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:paddingLeft="40px">
+
+                <ImageView
+                    android:id="@+id/iv_date_xing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_xing"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:layout_toRightOf="@+id/iv_date_xing"
+                    android:text="@string/home_date"
+                    android:textColor="@color/deep_gray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/et_homework_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:textColor="@color/deep_gray"
+                    android:layout_toRightOf="@+id/tv_date"
+                    android:background="@null"
+                    android:hint="@string/home_date_hint"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60px"
+                    android:src="@drawable/arrow_grey" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/border_gray"></View>
+
+            <!--<com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40px"
+                android:layout_marginTop="40px"
+                android:paddingLeft="40px">
+
+                <ImageView
+                    android:id="@+id/iv_publisher_xing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_xing"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_publisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:layout_toRightOf="@+id/iv_publisher_xing"
+                    android:text="@string/publisher"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_publisher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_publisher"
+                    android:background="@null"
+                    android:hint="@string/publisher_hint"
+                    android:singleLine="true" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/border_gray"></View>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40px"
+                    android:layout_marginTop="40px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="40px">
+
+                    <ImageView
+                        android:id="@+id/iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25px"
+                        android:src="@drawable/icon_xing" />
+
+                    <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:layout_toRightOf="@id/iv"
+                        android:text="@string/content"
+                        android:textColor="@color/deep_gray"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/et_homework_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginRight="20px"
+                        android:textColor="@color/deep_gray"
+                        android:background="@null"
+                        android:gravity="left|top"
+                        android:hint="@string/content_hint"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:layout_below="@id/all"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginLeft="220px">
+
+                    <ImageView
+                        android:id="@+id/iv_image"
+                        android:layout_width="180px"
+                        android:layout_height="180px"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/btn_add"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/iv_remove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/circle_remove"
+                        android:visibility="gone" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </ScrollView>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

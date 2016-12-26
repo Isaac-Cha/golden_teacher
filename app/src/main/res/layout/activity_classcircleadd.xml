@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.yl.teacher.widget.CustomTitleBar
+        android:id="@+id/widget_custom_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/navi_user"></com.yl.teacher.widget.CustomTitleBar>
+
+        <EditText
+            android:id="@+id/et_circle_add"
+            android:layout_width="fill_parent"
+            android:layout_height="400px"
+            android:layout_margin="40px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="left|top"
+            android:textColor="@color/deep_gray"
+            android:hint="字数不能超过250字"></EditText>
+
+        <GridView
+            android:id="@+id/gv_circle_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@android:color/transparent"
+            android:horizontalSpacing="20px"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp"></GridView>
+
+</com.zhy.autolayout.AutoLinearLayout>

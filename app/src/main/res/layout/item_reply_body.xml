@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/relaReply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearMain"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="20px"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/imgAuthor"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/img_comment_df" />
+
+        <TextView
+            android:id="@+id/tvMine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imgAuthor"
+            android:layout_marginRight="25px"
+            android:text="我"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgAuthor"
+            android:layout_marginRight="15px"
+            android:layout_toLeftOf="@+id/tvMine"
+            android:background="@drawable/review_comment"
+            android:gravity="center_vertical"
+            android:paddingLeft="15px"
+            android:paddingBottom="20px"
+            android:text=""
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvContent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15px"
+            android:background="@drawable/bg_reviwe_date"
+            android:gravity="center"
+            android:padding="10px"
+            android:text=""
+            android:textSize="12sp" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

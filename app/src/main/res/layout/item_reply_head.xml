@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_below="@+id/widget_custom_titlebar"
+        android:id="@+id/linearMain"
+        android:background="@drawable/et_comment_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:id="@+id/imgIcon"
+                android:layout_centerVertical="true"
+                android:src="@drawable/img_comment_df"
+                android:layout_width="100px"
+                android:layout_height="100px" />
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_marginLeft="10px"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:text=" "
+                    android:textSize="16sp"
+                    android:id="@+id/tvParent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_marginTop="10px"
+                    android:text=""
+                    android:textColor="#ff8175"
+                    android:id="@+id/tvTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="15px"
+                android:src="@color/line"
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+            <TextView
+                android:layout_marginTop="20px"
+                android:text=""
+                android:id="@+id/tvNo"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="20px"
+                android:text=""
+                android:id="@+id/tvClass"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="20px"
+                android:text=""
+                android:id="@+id/tvStart"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:text=""
+                android:id="@+id/tvRest"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <ImageView
+        android:id="@+id/imgReviewed"
+        android:layout_marginTop="111px"
+        android:layout_marginRight="93px"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/bg_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="wrap_content"  android:background="#f4f4f4">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="@drawable/et_comment_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:background="@color/white"
+            android:id="@+id/linearContent"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="120px"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+<!--<com.yl.teacher.widget.NoScrollListView
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/white"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="5dp"
+    android:id="@+id/lvOption"
+    android:layout_marginLeft="40px"
+    android:layout_marginTop="120px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></com.yl.teacher.widget.NoScrollListView>-->
+
+
+<TextView
+    android:layout_marginTop="10px"
+    android:textSize="15sp"
+    android:textColor="@color/user_coupon_red"
+    android:layout_marginLeft="40px"
+    android:text="进行中"
+    android:id="@+id/tvResult"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:background="@drawable/bg_bottom"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20px"
+            android:layout_height="48px">
+
+            <TextView
+                android:textSize="14sp"
+                android:id="@+id/tvDetail"
+                android:layout_marginLeft="40px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="#5b5f5d"
+                android:text="查看详情"
+                android:layout_width="wrap_content"
+                android:maxWidth="500px"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="44px"
+                android:src="@drawable/pay_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_marginRight="40px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/homework_blue"
+        android:layout_marginLeft="24px"
+        android:gravity="center_vertical"
+        android:id="@+id/tvTitle"
+        android:textSize="15sp"
+        android:singleLine="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="5px"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+<ImageView
+    android:layout_marginRight="50px"
+    android:layout_marginTop="50px"
+    android:layout_alignParentRight="true"
+    android:src="@drawable/vote_end"
+    android:id="@+id/imgEnd"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

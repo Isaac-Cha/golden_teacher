@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/linearSerialTitle"
+        android:gravity="center_horizontal" android:background="@drawable/bg_classes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="vertical" >
+
+        <TextView
+            android:layout_marginTop="90px"
+            android:id="@+id/tvSchool"
+            android:text=""
+            android:textSize="20sp"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="30px"
+            android:id="@+id/tvCreate"
+            android:text="创建班级"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/shape_et_transparent_bg"
+            android:layout_width="164px"
+            android:layout_height="49px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

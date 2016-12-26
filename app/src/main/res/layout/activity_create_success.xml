@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#f4f4f4">
+    <com.yl.teacher.widget.CustomTitleBar
+        android:id="@+id/widget_custom_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/navi_user"></com.yl.teacher.widget.CustomTitleBar>
+
+    <ImageView
+        android:layout_marginTop="110px"
+        android:src="@drawable/create_success"
+        android:layout_width="135px"
+        android:layout_height="135px" />
+    <TextView
+        android:textColor="@color/deep_gray"
+        android:layout_marginTop="28px"
+        android:textSize="20sp"
+        android:text="恭喜您！创建成功！"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="82px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#8a8989"
+            android:textSize="16sp"
+            android:text="班级名："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#5c5c5c"
+            android:id="@+id/tvClasses"
+            android:textSize="16sp"
+            android:text="一年一班"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#8a8989"
+            android:textSize="16sp"
+            android:text="班级编号："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#5c5c5c"
+            android:id="@+id/tvNo"
+            android:textSize="16sp"
+            android:text="001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#8a8989"
+            android:textSize="16sp"
+            android:text="班主任："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#5c5c5c"
+            android:id="@+id/tvTeacher"
+            android:textSize="16sp"
+            android:text="张阿四"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="78px"
+        android:gravity="center"
+        android:background="@drawable/login_bg"
+        android:id="@+id/tvLogin"
+        android:text="进入班级"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:layout_height="90px" />
+
+</com.zhy.autolayout.AutoLinearLayout>

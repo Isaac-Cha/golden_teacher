@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/widget_custom_titlebar" />
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="50dp"
+        android:background="#ff303030"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/title_layout_catalog"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#E0E0E0"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text=""
+            android:textColor="@color/deep_gray" />
+    </LinearLayout>
+
+    <com.yl.teacher.widget.CustomTitleBar
+        android:id="@+id/widget_custom_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/navi_user"></com.yl.teacher.widget.CustomTitleBar>
+
+    <LinearLayout
+        android:id="@+id/linearNodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/widget_custom_titlebar"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_nodata" />
+
+        <TextView
+            android:id="@+id/tvNodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="暂无数据哦！"
+            android:textColor="@color/deep_gray" />
+    </LinearLayout>
+
+
+</RelativeLayout>

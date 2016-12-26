@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content" android:background="@drawable/et_comment_bg">
+
+<TextView
+    android:layout_marginTop="20px"
+    android:textSize="18sp"
+    android:text="修改手机号"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="2dp"
+            android:layout_width="14dp"
+            android:layout_height="24dp"
+            android:src="@drawable/login_phone" />
+        <EditText
+            android:id="@+id/etPhoneNew"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint="请输入新手机号"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dip"
+            android:singleLine="true"
+            android:textColor="@color/deep_gray"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp"
+            ></EditText>
+
+
+        <Button
+            android:id="@+id/btnValidNew"
+            android:layout_marginRight="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/valid_bg"
+            android:text="获取验证码"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <ImageView
+        android:src="@color/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+    <com.zhy.autolayout.AutoLinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="2dp"
+            android:layout_width="19dp"
+            android:layout_height="24dp"
+            android:src="@drawable/valid_phone" />
+        <EditText
+            android:id="@+id/etValidNew"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dip"
+            android:singleLine="true"
+            android:textColor="@color/deep_gray"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp"
+            ></EditText>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

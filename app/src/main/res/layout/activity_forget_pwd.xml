@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/linear_bg">
+    <com.yl.teacher.widget.CustomTitleBar
+        android:id="@+id/widget_custom_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/navi_user"></com.yl.teacher.widget.CustomTitleBar>
+
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/relaMsg"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="100px"
+        android:layout_below="@+id/widget_custom_titlebar"
+        android:background="@drawable/et_comment_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:hint="@string/txt_login_name"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dip"
+            android:singleLine="true"
+            android:textColor="@color/deep_gray"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp"></EditText>
+        <ImageView android:layout_marginLeft="35px"
+            android:id="@+id/imgLine"
+            android:layout_below="@+id/etPhone"
+            android:layout_marginRight="35px"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line" />
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/relaValid"
+            android:layout_below="@+id/imgLine"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="50dp">
+            <EditText
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:inputType="number"
+                android:id="@+id/etValid"
+                android:layout_width="250px"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:hint="请输入验证码"
+                android:maxLength="20"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dip"
+                android:singleLine="true"
+                android:textColor="@color/deep_gray"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp"></EditText>
+
+            <Button
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/btnValid"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_height="30dp"
+                android:background="@drawable/valid_bg"
+                android:text="获取验证码"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+               />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <ImageView android:layout_marginLeft="35px"
+            android:id="@+id/imgLineTwo"
+            android:layout_below="@+id/relaValid"
+            android:layout_marginRight="35px"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line" />
+        <EditText android:inputType="textPassword"
+            android:id="@+id/etPwd"
+            android:layout_below="@+id/imgLineTwo"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:maxLength="20"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dip"
+            android:singleLine="true"
+            android:textColor="@color/deep_gray"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp"></EditText>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:text="提交"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_below="@+id/relaMsg"
+        android:background="@drawable/login_bg"
+        android:layout_width="match_parent"
+        android:layout_height="80px" />
+
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

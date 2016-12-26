@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/all_main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvCatalog"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#f4f4f4"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        android:singleLine="true"
+        android:textColor="@color/deep_gray" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15px"
+        android:paddingTop="15px">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imgIcon"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            fresco:failureImage="@drawable/contact_boy"
+            fresco:placeholderImage="@drawable/contact_boy"
+            fresco:roundAsCircle="true" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18px"
+            android:layout_marginTop="15px"
+            android:layout_toRightOf="@+id/imgIcon"
+            android:gravity="center_vertical"
+            android:maxWidth="400px"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/deep_gray" />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_marginLeft="18px"
+            android:layout_marginTop="5px"
+            android:layout_toRightOf="@+id/imgIcon"
+            android:gravity="center_vertical"
+            android:maxWidth="400px"
+            android:singleLine="true"
+            android:textColor="@color/deep_gray"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/linearPhone"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:src="@drawable/contact_phone" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e2e1e1" />
+
+
+</com.zhy.autolayout.AutoLinearLayout>
